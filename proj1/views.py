@@ -1,4 +1,4 @@
-from django.http import HttpResponse
+from django.http import HttpResponse,HttpResponseRedirect
 from django.shortcuts import render
 
 def homePage(request):
@@ -18,7 +18,9 @@ def businessRate(request):
  return render(request,"business-rate.html")
 
 def services(request):
- return render(request,"services.html")
+ if request.method=="GET":
+  output = request.GET.get('output')
+ return render(request,"services.html", {'output': output})
 
 def userForm(request):
  final = 0
@@ -35,6 +37,8 @@ def userForm(request):
     'n2': n2,
     'output': final
     }
+   url = "/services/?output={}".format(final)
+   return HttpResponseRedirect(url)
  except:
    pass
  return render(request,"userform.html", data)
