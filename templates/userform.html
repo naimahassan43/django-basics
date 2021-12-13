@@ -1,0 +1,56 @@
+{% extends 'base.html' %}
+   {% block content %}
+    <!-- Service-pg Area Start -->
+    <Section id="service-pg">
+      <div class="container">
+        <div class="row ">
+          <!-- ser-pg-left -->
+          <div class="col-lg-12 col-12">
+            <h1 class="com-heading ser-pg-hd">User Form</h1>
+
+            <div class="row">
+             <div class="col-12">
+              <form class="row g-3">
+               <div class="col-md-6">
+                <label for="val1" class="form-label">Value 1</label>
+                <input type="text" class="form-control" id="val1" name="val1">
+              </div>
+              <div class="col-md-6">
+               <label for="val2" class="form-label">Value 2</label>
+               <input type="text" class="form-control" id="val2" name="val2">
+             </div>
+             <div class="col-12">
+              <label for="output" class="form-label">Output</label>
+              <input type="text" class="form-control" value="{{output}}" id="output">
+            </div>
+               <!-- <div class="col-md-6">
+                 <label for="inputEmail4" class="form-label">Email</label>
+                 <input type="email" class="form-control" id="inputEmail4">
+               </div>
+               <div class="col-md-6">
+                 <label for="inputPassword4" class="form-label">Password</label>
+                 <input type="password" class="form-control" id="inputPassword4">
+               </div>
+               <div class="col-12">
+                 <label for="inputAddress" class="form-label">Address</label>
+                 <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+               </div>
+               <div class="col-12">
+                 <label for="inputAddress2" class="form-label">Address 2</label>
+                 <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+               </div> -->
+               <div class="col-12">
+                 <button type="submit" class="btn btn-primary">Sign in</button>
+               </div>
+   
+             </form>
+             </div>
+            </div>
+           
+          </div>
+       
+        </div>
+      </div>
+    </Section>
+    <!-- Service-pg Area End --> 
+    {% endblock %} 

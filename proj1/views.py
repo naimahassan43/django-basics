@@ -20,6 +20,14 @@ def businessRate(request):
 def services(request):
  return render(request,"services.html")
 
-
-# def courseDetails(request,courseid):
-#  return HttpResponse(courseid)
+def userForm(request):
+ final = 0
+ try:
+  # n1 = int(request.GET['val1'])
+  # n2 = int(request.GET['val2'])
+  n1 = int(request.GET.get('val1'))
+  n2 = int(request.GET.get('val2'))
+  final = n1+n2
+ except:
+   pass
+ return render(request,"userform.html", {'output': final})

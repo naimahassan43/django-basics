@@ -39,11 +39,16 @@ header {
   color: #e11e25;
   font-size: 30px;
 }
+.active {
+  display: block;
+}
+.active,
 .navbar-item:hover {
   background: #e11e25;
 }
+.active a,
 .navbar-item:hover a {
-  color: #fff;
+  color: #fff !important;
 }
 .navbar-item:hover i {
   color: #fff;

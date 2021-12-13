@@ -25,25 +25,27 @@
         <div class="container">
           <nav class="c_navbar">
             <ul>
+              {{request.path}}
             <li class="navbar-logo">
-              <a href="index.html">
+              <a href="{% url 'home' %}">
                 <img class="img-fluid logo-img" src="/static/assets/images/logo.png" alt="logo">
               </a>
             </li>
             <li class="navbar-toggle">
               <i class="fa fa-bars"></i>
             </li>
-            <li class="navbar-item">
+            <li class="navbar-item {% if request.path == '/' %} active {% endif %}">
               <a href="{% url 'home' %}">Home</a>
             </li>
             <!-- <li class="navbar-item">
               <a href="#about">About</a>
             </li> -->
-            <li class="navbar-item">
+            <li class="navbar-item {% if request.path == '/business-rate/' %} active {% endif %}">
               <a href="{% url 'business' %}">Business Rate</a>
             </li>
-            <li class="navbar-item">
-              <a href="{% url 'services' %}">Services</a>
+            {% url 'services' as url %}
+            <li class="navbar-item {% if request.path == url %} active {% endif %}">
+              <a href="{{url}}">Services</a>
             </li>
             <!-- <li class="navbar-item">
               <a href="#contact">Contact</a>
