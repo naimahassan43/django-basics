@@ -20,7 +20,7 @@ from proj1 import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.homePage),
-    path('about/', views.about, name='about'),
-    path('course/', views.course, name='course'),
-    path('course/<int:courseid>', views.courseDetails, name='course'),
+    path('business-rate/', views.businessRate),
+    path('services/', views.services),
+    
 ]

@@ -1,0 +1,322 @@
+/* // X-Small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+  /*=============================
+         Slider Area Start
+   =============================*/
+  #slider {
+    height: 65vh !important;
+  }
+  /*=============================
+         Slider Area end
+   =============================*/
+  /*=============================
+         Grid Area Start
+   =============================*/
+  .grid-img img {
+    margin-bottom: 20px;
+  }
+  .sing-cont h1 {
+    font-size: 18px !important;
+    margin-top: 10px !important;
+    margin-bottom: 6px !important;
+  }
+  .sing-cont p {
+    font-size: 12px !important;
+  }
+  .sing-cont .com-btn {
+    padding: 2px 10px !important;
+  }
+  /*=============================
+         Grid Area end
+   =============================*/
+  #cont-img {
+    display: none;
+  }
+  .com-heading {
+    font-size: 22px;
+    line-height: 0;
+    letter-spacing: 0.9px;
+  }
+  .ser-pg-left ul li {
+    font-size: 18px;
+    margin-bottom: 18px;
+  }
+}
+
+/* // Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+  /*=============================
+         Header Area Start
+   =============================*/
+  .c_navbar ul {
+    flex-wrap: wrap;
+  }
+  .navbar-logo {
+    flex: 0.8 !important;
+  }
+  .logo-img {
+    width: 80px !important;
+  }
+  .navbar-toggle {
+    display: block;
+  }
+  .navbar-toggle .fa-bars {
+    color: #e11e25;
+    font-size: 30px;
+  }
+  .navbar-item {
+    display: none;
+    width: 100%;
+    text-align: center;
+  }
+  .active {
+    display: block;
+  }
+  /*=============================
+         Header Area end
+   =============================*/
+  /*=============================
+         Slider Area Start
+   =============================*/
+  #slider {
+    height: 55vh;
+  }
+  .sl-cont {
+    padding-top: 80px !important;
+    padding-bottom: 0px !important;
+  }
+  .sl-cont h1 {
+    font-size: 25px !important;
+  }
+  .sl-cont h3 {
+    font-size: 20px !important;
+    margin: 20px 0;
+    letter-spacing: 1.1px;
+  }
+  .com-btn {
+    letter-spacing: 0.9px !important;
+  }
+  .com-btn a {
+    font-size: 14px !important;
+  }
+  /*=============================
+         Slider Area end
+   =============================*/
+  /*=============================
+         About Area Start
+   =============================*/
+  #about {
+    padding: 55px 0 !important;
+  }
+  .right-abt {
+    margin-top: 30px;
+  }
+  .right-abt img {
+    width: 300px;
+    height: 300px;
+  }
+  /*=============================
+         About Area end
+   =============================*/
+  /*=============================
+         Grid Area Start
+   =============================*/
+  #grid {
+    padding-top: 55px !important;
+    padding-bottom: 35px !important;
+  }
+  .grid-img img {
+    margin-bottom: 20px;
+  }
+  .sing-cont .com-btn {
+    margin: 10px 0 !important;
+  }
+  /*=============================
+         Grid Area end
+   =============================*/
+  /* ========Service page======= */
+  #service-pg {
+    padding-top: 40px;
+  }
+  .ser-pg-left {
+    margin-bottom: 20px;
+  }
+  /*=============================
+         Contact Area Start
+   =============================*/
+  .left-ct {
+    margin-bottom: 20px;
+  }
+  .left-ct .com-heading {
+    margin-bottom: 9px;
+  }
+  /*=============================
+         Contact Area end
+   =============================*/
+}
+
+/* // Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+  /*=============================
+         Header Area Start
+   =============================*/
+  .c_navbar ul {
+    flex-wrap: wrap;
+  }
+  .c_navbar ul li {
+    padding: 8px;
+  }
+  .logo-img {
+    width: 80px;
+  }
+  .navbar-toggle {
+    display: block;
+  }
+  .navbar-item {
+    display: none;
+    width: 100%;
+    text-align: center;
+  }
+  .active {
+    display: block;
+  }
+
+  /*=============================
+         Header Area end
+   =============================*/
+  /*=============================
+         Slider Area Start
+   =============================*/
+  .sl-cont {
+    padding-top: 110px;
+    padding-bottom: 150px;
+  }
+  .sl-cont h1 {
+    font-size: 35px;
+  }
+  .sl-cont h3 {
+    font-size: 30px;
+    margin: 20px 0;
+    letter-spacing: 1.1px;
+  }
+  .com-btn {
+    padding: 15px 40px;
+    letter-spacing: 1.1px;
+  }
+  /*=============================
+         Slider Area end
+   =============================*/
+  /*=============================
+         About Area Start
+   =============================*/
+  #about,
+  #grid {
+    padding: 70px 0;
+  }
+  .right-abt {
+    margin-top: 30px;
+  }
+  /*=============================
+         About Area end
+   =============================*/
+  /*=============================
+         Grid Area Start
+   =============================*/
+
+  .sing-cont h1 {
+    font-size: 22px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+  .sing-cont p {
+    font-size: 14px;
+  }
+  .sing-cont .com-btn {
+    margin: 10px 0;
+  }
+  /*=============================
+         Grid Area end
+   =============================*/
+  /*=============================
+         cont img Area Start
+   =============================*/
+  .mid-part {
+    margin-top: 40px;
+  }
+  .mid-part h3 {
+    font-size: 17px;
+    font-weight: 600;
+    padding: 8px 0;
+  }
+  .mid-part p {
+    font-size: 14px;
+    font-weight: 400;
+  }
+  .contact-btn {
+    margin: 20px 0;
+  }
+  /*=============================
+         cont img Area end
+   =============================*/
+  /*=============================
+         Contact Area Start
+   =============================*/
+  #contact {
+    padding: 40px 0;
+  }
+  .cont-info ul li {
+    padding: 12px 0;
+  }
+  .cont-info ul li i {
+    padding: 0 4px;
+  }
+  .cont-info ul li span {
+    font-size: 14px;
+    font-weight: 400;
+  }
+  /*=============================
+         Contact Area end
+   =============================*/
+  /*=============================
+         footer Area Start
+   =============================*/
+  footer {
+    padding: 8px 0;
+  }
+  .ft-cont {
+    margin: 15px 0;
+  }
+  .ft-cont p {
+    font-size: 12px;
+  }
+  /*=============================
+         footer Area end
+   =============================*/
+  /* =================
+  Bussiness Rate page
+  ==================== */
+  #slider-bs {
+    height: 35vh;
+  }
+  /* bussiness rate pg Area */
+  #bus-pg,
+  #fees-id,
+  #rev-id,
+  #new-app {
+    padding: 45px 0;
+  }
+  /* rev-img part */
+  .rev-img-cont {
+    padding: 10px 0;
+    margin: 40px 0;
+  }
+  .rev-img-cont h3 {
+    font-size: 20px;
+    font-weight: 600;
+    padding: 14px 0;
+  }
+  .rev-img-cont p {
+    font-size: 16px;
+    font-weight: 400;
+  }
+}

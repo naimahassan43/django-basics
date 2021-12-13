@@ -1,0 +1,287 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 16px;
+  font-family: "Open Sans", sans-serif;
+}
+/*=============================
+        Header Area Start
+ =============================*/
+header {
+  background-color: #f6f6f6;
+}
+.c_navbar ul {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  color: white;
+  margin-bottom: 0;
+}
+.c_navbar ul li {
+  list-style-type: none;
+  padding: 15px;
+}
+.c_navbar ul li a {
+  text-decoration: none;
+  color: #2a2021;
+  font-size: 18px;
+  font-weight: 600;
+}
+.navbar-logo {
+  flex: 1;
+}
+.navbar-toggle {
+  display: none;
+}
+.navbar-toggle .fa-bars {
+  color: #e11e25;
+  font-size: 30px;
+}
+.navbar-item:hover {
+  background: #e11e25;
+}
+.navbar-item:hover a {
+  color: #fff;
+}
+.navbar-item:hover i {
+  color: #fff;
+}
+.navbar-item i {
+  padding: 0 8px;
+  color: #e11e25;
+}
+/*=============================
+         Header Area end
+   =============================*/
+/*=============================
+         Slider Area Start
+   =============================*/
+#slider {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4)),
+    url(../images/slider3.jpg);
+  background-size: cover;
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 75vh;
+  display: inline-block;
+}
+.sl-cont {
+  padding-top: 150px;
+  padding-bottom: 200px;
+  color: #fff;
+}
+.sl-cont h1 {
+  font-size: 45px;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+  text-transform: capitalize;
+}
+.sl-cont h3 {
+  font-size: 40px;
+  font-weight: 700;
+  margin: 30px 0;
+  letter-spacing: 1.2px;
+  text-transform: capitalize;
+}
+/*button*/
+.com-btn {
+  text-transform: uppercase;
+  padding: 17px 45px;
+  display: inline-block;
+  letter-spacing: 1.2px;
+  background-color: #e11e25;
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+.com-btn a {
+  color: #fff !important;
+  text-decoration: none !important;
+}
+.com-btn:hover {
+  text-decoration: none;
+  border: 2px solid #e11e25;
+  background: #fff !important;
+  color: #e11e25 !important;
+}
+.com-btn:hover a {
+  font-weight: 700;
+  text-decoration: none;
+  color: #e11e25 !important;
+}
+/*=============================
+         Slider Area end
+   =============================*/
+/*=============================
+         About Area Start
+   =============================*/
+#about {
+  padding-top: 170px;
+  padding-bottom: 120px;
+  background-color: #e3e3e4;
+}
+.com-heading {
+  margin-bottom: 30px;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+.left-abt p {
+  margin-bottom: 10px;
+  line-height: 1.7;
+  letter-spacing: 1.1px;
+  text-align: justify;
+}
+.right-abt img {
+  width: 300px;
+  height: 300px;
+  border: 3px solid #e11e25;
+  border-radius: 50%;
+}
+.rt-abt-cont {
+  text-align: center;
+  margin-top: 5px;
+}
+.rt-abt-cont h4 {
+  font-size: 20px;
+  margin-bottom: 0px;
+  font-weight: 700;
+  color: #e11e25 !important;
+}
+.rt-abt-cont p {
+  margin-bottom: 0px;
+  font-size: 15px;
+  font-weight: 600;
+}
+/*=============================
+         About Area end
+   =============================*/
+/*=============================
+         Grid Area Start
+   =============================*/
+#grid {
+  padding: 120px 0;
+}
+.grid-img {
+  position: relative;
+}
+.sing-cont {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #801f22;
+  opacity: 0.9;
+  text-align: center;
+  color: #fff;
+  width: 80%;
+}
+.sing-cont h1 {
+  font-size: 24px;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-top: 30px;
+  margin-bottom: 18px;
+}
+.sing-cont p {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.5px;
+  text-align: center;
+  margin-bottom: 0px;
+}
+.sing-cont .com-btn {
+  padding: 5px 12px;
+  letter-spacing: 0px;
+  margin: 20px 0;
+}
+.sing-cont .com-btn:hover a {
+  font-size: 16px;
+  font-weight: 600;
+}
+/*=============================
+         Grid Area end
+   =============================*/
+/*=============================
+         cont img Area Start
+   =============================*/
+#cont-img {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../images/contact.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  display: inline-block;
+}
+.mid-part {
+  padding: 20px 0;
+  margin-top: 80px;
+  color: #fff;
+  background: #801f22;
+  opacity: 0.7;
+}
+.mid-part h3 {
+  font-size: 22px;
+  font-weight: 700;
+  padding: 10px 0;
+}
+.mid-part p {
+  font-size: 18px;
+  font-weight: 500;
+}
+.contact-btn {
+  margin: 35px 0;
+}
+/*=============================
+         cont img Area end
+   =============================*/
+/*=============================
+         Contact Area Start
+   =============================*/
+#contact {
+  padding-top: 170px;
+  padding-bottom: 120px;
+  background: #e3e3e4;
+}
+.cont-info ul li {
+  list-style-type: none;
+  padding: 12px 0;
+}
+.cont-info ul li i {
+  padding: 0 12px;
+  color: #e11e25;
+}
+.cont-info ul li span {
+  color: #2a2021;
+  font-size: 18px;
+  font-weight: 600;
+}
+.cont-info ul li span div {
+  display: inline-block;
+  margin-bottom: 0;
+}
+/*=============================
+         Contact Area end
+   =============================*/
+/*=============================
+         footer Area Start
+   =============================*/
+footer {
+  padding: 8px 0;
+  background: #a5a3a3;
+}
+.ft-cont {
+  margin: 20px 0;
+}
+.ft-cont p {
+  font-size: 12px;
+  margin-bottom: 0;
+}
+/*=============================
+         footer Area end
+   =============================*/

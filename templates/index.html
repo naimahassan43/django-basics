@@ -1,45 +1,106 @@
-<!DOCTYPE html>
-<html lang="en">
 
-<head>
- <meta charset="UTF-8">
- <meta http-equiv="X-UA-Compatible" content="IE=edge">
- <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <title>{{title}}</title>
- <style>
-  h1 {
-   color: aquamarine;
-  }
- </style>
-</head>
-
-<body>
- <h1>{{bdata}}</h1>
- {% for n in clist %}
- <div>
-  {{forloop.counter}} {{n}}
- </div>
- {% endfor %}
- <br>
- <table border="1" cellpadding="10">
-  <tr>
-   <th>Name</th>
-   <th>Phone Number</th>
-  </tr>
-
-  {% for d in student_details %}
-  <tr>
-   <td>{{ d.name }}</td>
-   <td>{{ d.phone }}</td>
-  </tr>
-  {% endfor %}
-
-  {% for d in numbers %}
-   {% if d > 20 %}
-     <div>{{d}}</div>
-   {% endif %}
-  {% endfor %}
- </table>
-</body>
-
-</html>
+    {% include "header.html" %}
+    <!-- Slider Area Start -->
+    <section id="slider">
+      <div class="container">
+        <div class="sl-cont text-center">
+          <h1>United Kingdom Based Surveyor </h1> 
+          <h3>with  high level of customer service</h3> 
+          <div class="com-btn">
+            <a href="/services">Find Out More</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Slider Area End -->
+    <!-- About Area Start -->
+    <Section id="about">
+      <div class="container">
+        <div class="row abt">
+          <div class="left-abt col-lg-8 col-12">
+            <h1 class="com-heading">About Us</h1>
+            <p>Citygate Surveyors is a company based in the City of London. Established 8 years ago. It provides Business Rates consultation and has helped many small businesses in reducing their liability in business rates.  
+              </p>
+              <p> 
+                Citygate Surveyors has specialist surveyors on board to provide help and assistance for a vast amount of other categories such as hotels, bars, restaurants just to name a few.
+              
+              </p>
+              <p> 
+              
+                The principal surveyor and  director is Bob Patel. Bob has worked for VOA for almost 25 years. He is specialist in business rates in most categories such as public house, clubs, casino department stores etc.
+                
+              </p>
+              <p> 
+                        
+                Bob has an established business since 2013 and brought back almost 3.5 million to the public. I have almost 400 clients that require my assistance in reducing their business rates liability . He works with all the councils in England, Scotland and Wales as well attend magistrate court and Bailiff meetings.
+              </p>
+              <p> 
+              
+                The team of the Citygate Surveyors work with councils across England, Scotland and Wales.
+              </p>
+          </div>
+          <div class="right-abt col-lg-4 col-12 text-center">
+            <img class="" src="./static/assets/images/bob.jpg" alt="Bob Patel">
+            <div class="rt-abt-cont">
+              <h4>Bob Patel</h4>
+              <p>Director</p>
+              <p>Citygate Surveyors</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </Section>
+    <!-- About Area End --> 
+    <!-- Grid Area Start -->
+    <Section id="grid">
+      <div class="container">
+        <div class="row">
+          <!-- single item -->
+          <div class="col-md-6 col-12">
+            <div class="grid-img">
+              <img class="img-fluid" src="/static/assets/images/grid/grid-2.jpg" alt="">
+              <div class="sing-cont">
+                <h1 class="">BUSINESS RATES</h1>
+                <p>By choosing Citygate Surveyors you will be working with a rating team with vast experience across all property sectors throughout the UK.    
+                </p>
+                <div class="com-btn">
+                  <a href="/business-rate">Find Out More</a>
+                </div>
+              </div>
+            </div>
+          </div><!-- /. single item -->
+          <!-- single item -->
+          <div class="col-md-6 col-12">
+            <div class="grid-img">
+              <img class="img-fluid" src="/static/assets/images/grid/grid-1.jpg" alt="">
+              <div class="sing-cont">
+                <h1 class="">Our services </h1>
+                <p>•  Appeals Management</p>
+                <p>•   Empty Rates Consultancy</p>
+                <p>•   Rates Management</p>
+                <p>•   Historic Audit (RatePal)</p>
+                <div class="com-btn">
+                  <a href="/services">Find Out More</a>
+                </div>
+              </div>
+            </div>
+          </div><!-- /. single item -->
+        </div>
+      </div>
+    </Section>
+    <!-- Grid Area End -->
+    <!-- cont img Area Start -->
+    <section id="cont-img">
+      <div class="container text-center">
+        <div class="mid-part">
+          <h3>Talk To Us And Let Us Guide You Through With The Benefit Of Our Experience.
+          </h3>
+          <p>We have got a very Friendly Team And we always Happy To Discuss Matters With You In Confidence.</p>
+        </div>
+        <div class="com-btn contact-btn">
+          <a href="#contact">Contact Us</a>
+        </div>
+      </div>
+    </section>
+    <!-- cont img Area End -->
+    {% include "footer.html" %}

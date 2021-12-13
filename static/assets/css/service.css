@@ -1,0 +1,146 @@
+/* ========Service page======= */
+#service-pg {
+  padding: 120px 0;
+}
+.ser-pg-left {
+  margin-bottom: 40px;
+}
+.ser-pg-left ul li {
+  list-style-type: square;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+.ser-pg-left ul li p {
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  line-height: 1.7;
+  letter-spacing: 1px;
+  text-align: justify;
+}
+.ser-pg-right .card .card-body .card-title {
+  font-size: 20px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.ser-pg-right .card ul li {
+  font-size: 14px;
+}
+.ser-pg-btn {
+  padding: 10px 30px;
+}
+/* ========Bussiness Rate page======= */
+#slider-bs {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4)),
+    url(../images/slider1.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 50vh;
+  display: inline-block;
+}
+/* bussiness rate pg Area */
+#bus-pg {
+  padding: 90px 0;
+}
+#bus-pg p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.7;
+  letter-spacing: 1px;
+  text-align: justify;
+}
+#bus-pg ul {
+  margin-bottom: 0;
+}
+#bus-pg ul li {
+  list-style-type: square;
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+/* fees area */
+#fees-id {
+  padding: 90px 0;
+  background: #e3e3e4;
+}
+.fees p {
+  font-size: 16px;
+  line-height: 1.7;
+  text-align: justify;
+}
+/* rev-img part */
+#rev-img {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4)),
+    url(../images/slider2.jpg);
+  background-size: cover;
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  width: 100%;
+  display: inline-block;
+}
+.rev-img-cont {
+  padding: 25px 0;
+  margin: 90px 0;
+  color: #fff;
+  background: #801f22;
+  opacity: 0.7;
+}
+.rev-img-cont h3 {
+  font-size: 25px;
+  font-weight: 600;
+  padding: 18px 0;
+  margin-bottom: 0;
+}
+.rev-img-cont p {
+  font-size: 18px;
+  font-weight: 500;
+}
+/* Rev Area */
+#rev-id {
+  padding: 90px 0;
+  background: #e3e3e4;
+}
+.rev p {
+  font-size: 16px;
+  line-height: 1.7;
+  text-align: justify;
+}
+/* new appeal system */
+#new-app {
+  padding: 90px 0;
+}
+#new-app p {
+  font-size: 16px;
+  line-height: 1.7;
+  text-align: justify;
+}
+#new-app ol li {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+#new-app ol li p {
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  line-height: 1.7;
+  letter-spacing: 1px;
+  text-align: justify;
+}
+.voa a {
+  color: #e11e25;
+  text-decoration: none;
+  display: inline-block;
+  margin-bottom: 15px;
+}
+.voa:hover a {
+  border-bottom: 2px solid #e11e25;
+}
+.br-btn {
+  margin-bottom: 0px;
+}
