@@ -33,6 +33,12 @@
    <td>{{ d.phone }}</td>
   </tr>
   {% endfor %}
+
+  {% for d in numbers %}
+   {% if d > 20 %}
+     <div>{{d}}</div>
+   {% endif %}
+  {% endfor %}
  </table>
 </body>
 
