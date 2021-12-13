@@ -22,12 +22,19 @@ def services(request):
 
 def userForm(request):
  final = 0
+ data={}
  try:
+  if request.method == "POST":
   # n1 = int(request.GET['val1'])
   # n2 = int(request.GET['val2'])
-  n1 = int(request.GET.get('val1'))
-  n2 = int(request.GET.get('val2'))
-  final = n1+n2
+   n1 = int(request.POST.get('val1'))
+   n2 = int(request.POST.get('val2'))
+   final = n1+n2
+   data = {
+    'n1': n1,
+    'n2': n2,
+    'output': final
+    }
  except:
    pass
- return render(request,"userform.html", {'output': final})
+ return render(request,"userform.html", data)
