@@ -1,0 +1,53 @@
+{% extends 'base.html' %}
+   {% block content %}
+    <!-- Service-pg Area Start -->
+    <Section id="service-pg">
+      <div class="container">
+        <div class="row ">
+          <!-- ser-pg-left -->
+          <div class="col-lg-12 col-12">
+            <h1 class="com-heading ser-pg-hd">Calculator</h1>
+
+            <div class="row">
+             <div class="col-12">
+              <form class="row g-3" method="post">
+               {% csrf_token %}
+              
+               <div class="col-12">
+                <label for="val1" class="form-label">Value 1</label>
+                <input type="text" class="form-control" value="{{n1}}" id="val1" name="val1">
+               </div>
+              <div class="col-12">
+               <label for="opr" class="form-label">Select operator</label>
+               <select class="form-select" name="operator" id="opr">
+                 
+                 <option value="+">+</option>
+                 <option value="-">-</option>
+                 <option value="*">*</option>
+                 <option value="/">/</option>
+               </select>
+              </div>
+              
+              <div class="col-12">
+               <label for="val2" class="form-label">Value 2</label>
+               <input type="text" class="form-control" value="{{n2}}" id="val2" name="val2">
+              </div>
+              
+               <div class="col-12">
+                 <button type="submit" class="btn btn-primary">Calculate</button>
+               </div> 
+               <div class="col-12">
+                <label for="output" class="form-label">Output</label>
+                 <input type="text" class="form-control" value="{{c}}" id="output">
+               </div>
+             </form>
+             </div>
+            </div>
+           
+          </div>
+       
+        </div>
+      </div>
+    </Section>
+    <!-- Service-pg Area End --> 
+    {% endblock %} 

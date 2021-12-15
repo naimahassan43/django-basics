@@ -23,6 +23,8 @@ urlpatterns = [
     path('business-rate/', views.businessRate, name='business'),
     path('services/', views.services, name='services'),
     path('userform/', views.userForm, name='userform'),
+    path('calculator/', views.calculatorForm, name='calculator'),
+    
     # path('submitform/', views.submitForm, name='submitform'),
     
 ]

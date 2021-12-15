@@ -23,6 +23,28 @@ def services(request):
   output = request.GET.get('output')
  return render(request,"services.html", {'output': output})
 
+def calculatorForm(request):
+  c = ''
+  try:
+    if request.method=="POST":
+      n1       = eval(request.POST.get('val1'))
+      n2       = eval(request.POST.get('val2'))
+      operator = request.POST.get('operator')
+      if operator == '+':
+        c = n1+n2
+      elif operator == '-':
+        c = n1-n2
+      elif operator == '*':
+        c = n1*n2
+      elif operator == '/':
+        c = n1/n2
+      
+  except:
+    c = "Invalid operator..."
+    print(c)
+
+  return render(request,"calculator.html", {'c':c})
+
 def userForm(request):
  final = 0
  fn = usersForm()
@@ -44,6 +66,8 @@ def userForm(request):
  except:
    pass
  return render(request,"userform.html", data)
+
+ 
 
 # def submitForm(request):
 #   try:
