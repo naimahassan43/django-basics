@@ -1,0 +1,58 @@
+{% extends 'base.html' %}
+   {% block content %}
+    <!-- Service-pg Area Start -->
+    <Section id="service-pg">
+      <div class="container">
+        <div class="row ">
+          <!-- ser-pg-left -->
+          <div class="col-lg-12 col-12">
+            <h1 class="com-heading ser-pg-hd">User Form</h1>
+
+            <div class="row">
+             <div class="col-12">
+              <form class="row g-3" method="post">
+               {% csrf_token %}
+               
+                  <div class="col-md-6">
+                   <label for="sub1" class="form-label">Subject 1</label>
+                   <input type="text" class="form-control" id="sub1" name="sub1">
+                 </div>
+                 <div class="col-md-6">
+                  <label for="sub2" class="form-label">Subject 2</label>
+                  <input type="text" class="form-control" id="sub2" name="sub2">
+                </div>
+                <div class="col-md-6">
+                 <label for="sub3" class="form-label">Subject 3</label>
+                 <input type="text" class="form-control" id="sub3" name="sub3">
+               </div>
+               <div class="col-md-6">
+                <label for="sub4" class="form-label">Subject 4</label>
+                <input type="text" class="form-control" id="sub4" name="sub4">
+              </div>
+              <div class="col-12">
+                 <button type="submit" class="btn btn-primary">Marksheet</button>
+               </div> 
+               <div class="col-12">
+                <label for="total" class="form-label">Total</label>
+                <input type="text" class="form-control" value="{{total}}" id="total">
+              </div>
+              <div class="col-12">
+               <label for="per" class="form-label">Percentage</label>
+               <input type="text" class="form-control" value="{{percentage}} %" id="per">
+             </div>
+             <div class="col-12">
+              <label for="output" class="form-label">Grade</label>
+              <input type="text" class="form-control" value="{{div}}" id="output">
+            </div>
+     
+             </form>
+             </div>
+            </div>
+           
+          </div>
+       
+        </div>
+      </div>
+    </Section>
+    <!-- Service-pg Area End --> 
+    {% endblock %} 

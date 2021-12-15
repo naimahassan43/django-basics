@@ -25,6 +25,7 @@ urlpatterns = [
     path('userform/', views.userForm, name='userform'),
     path('calculator/', views.calculatorForm, name='calculator'),
     path('evenodd/', views.evenodd, name='evenodd'),
+    path('marksheet/', views.marksheet, name='marksheet'),
     
     # path('submitform/', views.submitForm, name='submitform'),
     

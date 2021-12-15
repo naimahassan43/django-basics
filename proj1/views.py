@@ -17,12 +17,38 @@ def homePage(request):
 
 def businessRate(request):
  return render(request,"business-rate.html")
-
+# Services
 def services(request):
  if request.method=="GET":
   output = request.GET.get('output')
  return render(request,"services.html", {'output': output})
 
+# marksheet
+def marksheet(request):
+  if request.method=="POST":
+    s1 = eval(request.POST.get('sub1'))
+    s2 = eval(request.POST.get('sub2'))
+    s3 = eval(request.POST.get('sub3'))
+    s4 = eval(request.POST.get('sub4'))
+    total = s1+s2+s3+s4
+    percentage = total*100/400
+    if percentage > 60:
+      d = "First Class"
+    elif percentage > 50:
+      d = "Second Class"
+    elif percentage > 35:
+      d = "Third Class"
+    else:
+      d = "Fail"
+    data = {
+      'total': total,
+      'percentage': percentage,
+      'div': d,
+    }
+    return render(request,"marksheet.html", data)
+  return render(request,"marksheet.html")
+
+# calculator
 def calculatorForm(request):
   c = ''
   try:
@@ -44,6 +70,7 @@ def calculatorForm(request):
     print(c)
 
   return render(request,"calculator.html", {'c':c})
+  # evenodd
 def evenodd(request):
   c = ''
   if request.method == "POST":
@@ -54,7 +81,7 @@ def evenodd(request):
       c = "Odd Number"
 
   return render(request,"evenodd.html", {'c':c})
-
+# userForm
 def userForm(request):
  final = 0
  fn = usersForm()
