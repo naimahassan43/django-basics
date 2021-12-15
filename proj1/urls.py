@@ -24,6 +24,7 @@ urlpatterns = [
     path('services/', views.services, name='services'),
     path('userform/', views.userForm, name='userform'),
     path('calculator/', views.calculatorForm, name='calculator'),
+    path('evenodd/', views.evenodd, name='evenodd'),
     
     # path('submitform/', views.submitForm, name='submitform'),
     

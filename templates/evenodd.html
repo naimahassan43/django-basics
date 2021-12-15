@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+   {% block content %}
+    <!-- Service-pg Area Start -->
+    <Section id="service-pg">
+      <div class="container">
+        <div class="row ">
+          <!-- ser-pg-left -->
+          <div class="col-lg-12 col-12">
+            <h1 class="com-heading ser-pg-hd">Calculator</h1>
+
+            <div class="row">
+             <div class="col-12">
+              <form class="row g-3" method="post">
+               {% csrf_token %}
+              
+               <div class="col-12">
+                <label for="val1" class="form-label">Value</label>
+                <input type="text" class="form-control" value="{{n}}" id="val1" name="val">
+               </div>
+               
+               <div class="col-12">
+                 <button type="submit" class="btn btn-primary">Even | Odd</button>
+               </div> 
+               <div class="col-12">
+                <label for="output" class="form-label">Output</label>
+                 <input type="text" class="form-control" value="{{c}}" id="output">
+               </div>
+             </form>
+             </div>
+            </div>
+           
+          </div>
+       
+        </div>
+      </div>
+    </Section>
+    <!-- Service-pg Area End --> 
+    {% endblock %} 
