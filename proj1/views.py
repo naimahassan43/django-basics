@@ -74,6 +74,8 @@ def calculatorForm(request):
 def evenodd(request):
   c = ''
   if request.method == "POST":
+    if request.POST.get('val') == "":
+      return render(request,"evenodd.html", {'error':True})
     n = eval(request.POST.get('val'))
     if n % 2 == 0:
       c = "Even Number"
