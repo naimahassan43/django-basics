@@ -1,5 +1,6 @@
 from django.http import HttpResponse,HttpResponseRedirect
 from django.shortcuts import render
+from .forms import usersForm
 
 def homePage(request):
  # data={
@@ -24,7 +25,9 @@ def services(request):
 
 def userForm(request):
  final = 0
- data={}
+ fn = usersForm()
+
+ data={'form':fn}
  try:
   if request.method == "POST":
   # n1 = int(request.GET['val1'])
@@ -33,8 +36,7 @@ def userForm(request):
    n2 = int(request.POST.get('val2'))
    final = n1+n2
    data = {
-    'n1': n1,
-    'n2': n2,
+    'form':fn,
     'output': final
     }
    url = "/services/?output={}".format(final)
@@ -42,3 +44,24 @@ def userForm(request):
  except:
    pass
  return render(request,"userform.html", data)
+
+# def submitForm(request):
+#   try:
+#     if request.method == 'POST':
+#       n1 = int(request.POST.get('num1'))
+#       n2 = int(request.POST.get('num2'))
+#       final = n1 + n2
+#       data = {
+#         'n1':n1,
+#         'n2':n2,
+#         'output': final
+#         }
+      
+#     return HttpResponse(final)
+#   except:
+#     pass
+
+
+  
+
+   

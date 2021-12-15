@@ -12,14 +12,15 @@
              <div class="col-12">
               <form class="row g-3" method="post">
                {% csrf_token %}
-               <div class="col-md-6">
+               {{form}}
+               <!-- <div class="col-md-6">
                 <label for="val1" class="form-label">Value 1</label>
                 <input type="text" class="form-control" value="{{n1}}" id="val1" name="val1">
               </div>
               <div class="col-md-6">
                <label for="val2" class="form-label">Value 2</label>
                <input type="text" class="form-control" value="{{n2}}" id="val2" name="val2">
-              </div>
+              </div> -->
                <div class="col-12">
                 <label for="output" class="form-label">Output</label>
                 <input type="text" class="form-control" value="{{output}}" id="output">
